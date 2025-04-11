@@ -1,32 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HUNAIS P M | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #6f04bc, #18a7d7, #0693ba, #6f04bc);
+        color: #000000;
+        overflow-x: hidden;
+      }
+      header {
+        background: rgba(230, 0, 255, 0.1);
+        padding: 60px 20px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      header h1 {
+        font-size: 4em;
+        color: #000000;
+      }
+      header,
+      a {
+        font-size: 1.1rem;
+        color: #aad9ff;
+      }
+      p ,li{
+        font-size: 1.8rem;
+      }
+      a:hover {
+        color: #00ffff;
+      }
+      .container {
+        max-width: 1500px;
+        margin: auto;
+        padding: 40px 20px;
+      }
+      section {
+        margin-bottom: 20px;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 50px;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+      }
+      h2 {
+        color: #000000;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #000000;
+        display: inline-block;
+      }
+      ul {
+        margin-left: 20px;
+        line-height: 1.8;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .tag {
+        background: rgba(255, 255, 255, 0.15);
+        color: #ffffff;
+        padding: 8px 16px;
+        border-radius: 2px;
+        font-size: 25px;
+        border: 1px solid #ffffff;
+      }
+
+      .project-buttons a {
+        background-color: #00ffff;
+        color: #000;
+        padding: 6px 12px;
+        margin-right: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .project-buttons a:hover {
+        background-color: #0ff;
+        color: #b41212;
+      }
+      #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      .typewriter {
+        overflow: hidden;
+        border-right: 0.15em solid aqua;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+        font-size: 1.2em;
+        color: #aad9ff;
+        margin-top: 10px;
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <header>
+      <h1>HUNAIS P M</h1>
+      <div class="typewriter">Full Stack Developer | ML Engineer | Creative Designer</div>
+      <p>📞 +91 9645792148 | 📧 19mcs49@meaec.edu.in | 🌐 <a href="https://linkedin.com/in/hunaispm" target="_blank">LinkedIn</a></p>
+      <p>📍 Manjeri, Malappuram, Kerala, India</p>
+    </header>
+
     <div class="container">
-        <header>
-            <h1>Welcome to My Profile</h1>
-        </header>
-
-        <section class="profile">
-            <img src="photo.jpg" alt="Profile Picture">
-            <h2>Your Name</h2>
-            <p>Hello! I'm learning web development and this is my first project.</p>
-        </section>
-
-        <section class="social-links">
-            <h3>Connect with me:</h3>
-            <a href="https://github.com/" target="_blank">GitHub</a> |
-            <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 Your Name</p>
-        </footer>
+      <section>
+        <h2>Summary</h2>
+        <p>Creative developer with expertise in cross-discipline tech, AI/ML, and automation with a strong focus on innovation and research.</p>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li>B.Tech in Computer Science Engineering, MEA Engineering College (08/2019 – 05/2023)</li>
+          <li>B.Tech in Mechanical Engineering (Minor), MEA Engineering College (08/2020 – 05/2023)</li>
+          <li>Higher Secondary, N S S E M H S S (06/2017 – 05/2019)</li>
+          <li>High School, N S S E M H S S (06/2016 – 05/2017)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Experience</h2>
+        <ul>
+          <li><b>Goldmine Global</b> – AI & Design Intern</li>
+          <li><b>Internshala</b> – Student Partner</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Projects</h2>
+        <ul>
+          <li><b>Network-Based Intrusion Detection</b> – Published at NCASCD23</li>
+          <li><b>Bus Management System</b> – Python & Realtime Maps</li>
+          <li><b>Levitating Wind Power Technology</b></li>
+        </ul>
+        <div class="project-buttons"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+      </section>
+      <section>
+        <h2>Certifications</h2>
+        <ul>
+          <li>Python, AI/ML, SEO, Full-Stack, AutoCAD, WordPress</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Technical Skills</h2>
+        <div class="tags">
+          <div class="tag">Python</div>
+          <div class="tag">React</div>
+          <div class="tag">Node.js</div>
+          <div class="tag">Django</div>
+          <div class="tag">Tailwind</div>
+          <div class="tag">MongoDB</div>
+          <div class="tag">Docker</div>
+        </div>
+      </section>
+      <section>
+        <h2>AI & Multimedia Tools</h2>
+        <div class="tags">
+          <div class="tag">ML</div>
+          <div class="tag">NLP</div>
+          <div class="tag">Blender</div>
+          <div class="tag">DaVinci</div>
+          <div class="tag">Figma</div>
+        </div>
+      </section>
+      <section>
+        <h2>Soft Skills</h2>
+        <div class="tags">
+          <div class="tag">Leadership</div>
+          <div class="tag">Research</div>
+          <div class="tag">Time Management</div>
+          <div class="tag">Teamwork</div>
+        </div>
+      </section>
+      <section>
+        <h2>Achievements</h2>
+        <ul>
+          <li>Paper Published on Intrusion Detection at NCASCD23</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Languages</h2>
+        <div class="tags">
+          <div class="tag">Malayalam</div>
+          <div class="tag">English</div>
+        </div>
+      </section>
+      <section>
+        <h2>Webinars</h2>
+        <ul>
+          <li>AI, Robotics, Grid Energy, NLP, Drones, Quantum Tech</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Interests</h2>
+        <div class="tags">
+          <div class="tag">Robotics</div>
+          <div class="tag">DIY</div>
+          <div class="tag">Product Design</div>
+          <div class="tag">RC Drones</div>
+        </div>
+      </section>
+      <section>
+        <h2>Memberships</h2>
+        <ul>
+          <li>AICTSD Member</li>
+          <li>Internshala Partner</li>
+        </ul>
+      </section>
     </div>
-</body>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 100, density: { enable: true, value_area: 800 } },
+          color: { value: "#00ffff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5, random: true },
+          size: { value: 20, random: true },
+          line_linked: { enable: true, distance: 150, color: "#00ffff", opacity: 0.4, width: 1 },
+          move: { enable: true, speed: 2 },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: { onhover: { enable: true, mode: "repulse" } },
+          modes: { repulse: { distance: 100, duration: 0.4 } },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
 </html>
