@@ -3,27 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HUNAIS P M | Resume</title>
+    <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
     <style>
+      /* General Styles */
       body {
-        font-family: "Poppins", sans-serif;
+        font-family: 'Arial', sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #ffffff;
-        color: #000000;
+        background-color: #17a2b8; 
+        color: #212529;
       }
 
-      .container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: 20px auto;
-        background-color: #82eff6;
+      /* Header Styles */
+      header {
+        background: linear-gradient(90deg, #6c757d, #495057); /* Gray gradient */
+        color: #f8f9fa; /* Light text */
         padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      /* Container Styles */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Card Styles */
+      .card {
+        background: #ffffff; /* White background */
+        color: #212529; /* Dark gray text */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(108, 117, 125, 0.2); /* Subtle gray shadow */
+        margin-bottom: 20px;
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Button Styles */
+      button {
+        background-color: #17a2b8; /* Teal button */
+        color: #ffffff; /* White text */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #138496; /* Darker teal on hover */
+      }
+
+      /* Footer Styles */
+      footer {
+        background-color: #343a40; /* Dark gray background */
+        color: #f8f9fa; /* Light text */
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
       }
 
       .text-section {
@@ -33,7 +80,7 @@
 
       .text-section h1 {
         font-size: 2.5em;
-        color: #000000;
+        color: #343a40; /* Dark gray headings */
         margin-bottom: 10px;
       }
 
@@ -43,9 +90,10 @@
       }
 
       .text-section a {
-        color: #0078d7;
+        color: #000000;
         text-decoration: none;
         font-weight: bold;
+        text-decoration: underline;
       }
 
       .photo-section {
@@ -58,7 +106,7 @@
       .photo-section .photo {
         width: 300px;
         height: 300px;
-        border-radius: 10%;
+        border-radius: 100%;
         background-image: url("photo.png");
         background-size: cover;
         background-position-y: 0px;
@@ -81,7 +129,7 @@
       }
 
       .icons a:hover {
-        color: #0056a3;
+        color: #000000;
       }
 
       .left-column {
@@ -96,37 +144,36 @@
         margin-left: 20px;
       }
 
-      .card {
-        background: rgb(255, 255, 255);
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        margin-bottom: 20px;
-      }
-
       h2 {
-        font-size: 1.8em;
-        color: #000000;
-        border-bottom: 2px solid #0078d7;
+        font-size: 1.9em;
+        color: #343a40; /* Dark gray headings */
+        border-bottom: 2px solid #17a2b8; /* Teal underline */
         padding-bottom: 5px;
         margin-bottom: 10px;
       }
 
       h3 {
         font-size: 1.5em;
-        color: #000000;
-        border-bottom: 2px solid #0078d7;
+        color: #000000; /* Dark gray headings */
+        
         padding-bottom: 5px;
         margin-bottom: 10px;
       }
 
       p {
-        font-size: 1.1em;
+        font-size: 1.2em;
         margin: 5px 0;
+
       }
 
       ul {
         margin-left: 20px;
+      }
+
+      /* Updated font size for list items */
+      ul li {
+        font-size: 1.2em; /* Adjusted font size for better readability */
+       
       }
 
       .tags {
@@ -136,37 +183,45 @@
       }
 
       .tag {
-        background: #000000;
-        color: rgb(255, 255, 255);
+        background: #17a2b8; /* Teal tags */
+        color: #ffffff; /* White text */
         padding: 10px 30px;
         border-radius: 5px;
-        font-size: 1.em;  
+        font-size: 1.2em;  
       }
+
+      .tag:hover {
+        background: #000000; /* Darker teal on hover */
+      }
+      
+      
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="text-section">
-        <h1>HUNAIS P M</h1>
-        <p>Full Stack Developer | Machine Learning Engineer | Creative Designer</p>
-        <p>📞 +91 9645792148</p>
-        <p>📧 <a href="mailto:19mcs49@meaec.edu.in">19mcs49@meaec.edu.in</a></p>
-        <p>🌐 <a href="https://linkedin.com/in/hunaispm" target="_blank">LinkedIn</a> | <a href="https://github.com/HUNAIS-PM" target="_blank">GitHub</a></p>
-        <p>📍 Manjeri, Malappuram, Kerala, India</p>
-        <div class="icons">
-          <a href="https://linkedin.com/in/hunaispm" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/HUNAIS-PM" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="mailto:19mcs49@meaec.edu.in"><i class="fas fa-envelope"></i></a>
-          <a href="tel:+919645792148"><i class="fas fa-phone"></i></a>
-        </div>
+    <div class="container" style="display: flex; align-items: center; gap: 20px;">
+      <div class="text-section" style="flex: 2; color: #000;">
+      <div class="head-text">
+        <h1 style="color: #000;">HUNAIS P M</h1>
+        <p><strong>Full Stack Developer | Machine Learning Engineer | Creative Designer</strong></p>
+        <p><strong>+91 9645792148</strong></p>
+        <p><a href="mailto:19mcs49@meaec.edu.in" style="color: #000;">19mcs49@meaec.edu.in</a></p>
+        <p><a href="https://linkedin.com/in/hunaispm" target="_blank" style="color: #000;">LinkedIn</a> | <a href="https://github.com/HUNAIS-PM" target="_blank" style="color: #000;">GitHub</a></p>
+        <p><strong>Manjeri, Malappuram, Kerala, India</strong></p>
       </div>
-      <div class="photo-section">
-        <div class="photo"></div>
+      <div class="icons">
+        <a href="https://linkedin.com/in/hunaispm" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/HUNAIS-PM" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:19mcs49@meaec.edu.in"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+919645792148"><i class="fas fa-phone"></i></a>
+      </div>
+      </div>
+      <div class="photo-section" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+      <div class="photo"></div>
       </div>
     </div>
 
     <div class="container">
-      <div class="left-column">
+      
         <section class="card">
           <h2>Summary</h2>
           <p>
@@ -196,26 +251,50 @@
         </section>
 
         <section class="card">
-          <h2>Experience</h2>
-          <h3>Intern</h3>
-          <p><strong>Goldmine Global Services Limited</strong> – Remote</p>
-          <p><strong>Duration:</strong> 05/2021 - 06/2021</p>
-          <ul>
-            <li>An online internship program focused on Python and AI.</li>
-            <li>Worked as an Intern at Goldmine Global, focusing on Python, Electrical Designing, and AI.</li>
-          </ul>
+  <h2>Experience</h2>
 
-          <h3>Intern</h3>
-          <p><strong>Internshala</strong> – Remote</p>
-          <ul>
-            <li>An internship platform connecting students with internship opportunities.</li>
-          </ul>
-        </section>
+  <h3>Intern – Python & AI</h3>
+  <p><strong>Goldmine Global Services Limited</strong> – Remote</p>
+  <p><strong>Duration:</strong> May 2021 – June 2021</p>
+  <ul>
+    <li>Completed a structured online internship program focused on Python programming and Artificial Intelligence.</li>
+    <li>Contributed to automation scripts and assisted in basic electrical design simulations.</li>
+  </ul>
 
-        </section>
+  <h3>Campus Ambassador</h3>
+  <p><strong>Internshala</strong> – Remote</p>
+  <ul>
+    <li>Promoted Internshala internships and engaged peers in opportunities for skill development.</li>
+    <li>Acted as a liaison between Internshala and students to drive awareness and participation.</li>
+  </ul>
+
+  <h3>Freelance Web Developer</h3>
+  <p><strong>Client-Based Projects</strong> – Remote / On-demand</p>
+  <ul>
+    <li>Designed and developed dynamic, responsive websites and web applications tailored to client requirements.</li>
+    <li>Delivered projects including e-commerce platforms, admin dashboards,websites etc.</li>
+    <li>Managed full project lifecycle – from requirement gathering to deployment and client support.</li>
+  </ul>
+
+   <h3>Solo Developer</h3>
+  <ul>
+    <li>Independently built <strong>The App Universe</strong> – a categorized web platform offering 100+ tools across tech domains.</li>
+    <li>Created a <strong>Python-based AI Assistant</strong>with voice control, system integration, and OpenAI-powered responses.</li>
+    <li>Developed a real-time <strong>Laravel Blog Platform</strong> featuring dynamic comments, admin panel, and WebSocket support.</li>
+  </ul>
+</section>
+</section>
+
 
  <section class="card">
   <h2>Projects</h2>
+  <p><strong>Python-Based AI Assistant</strong></p>
+<ul>
+  <li>Developed a voice-activated AI assistant capable of performing system tasks, answering queries, and fetching real-time data.</li>
+  <li>Integrated speech recognition, text-to-speech (TTS), and natural language processing using Python libraries like SpeechRecognition, pyttsx3, and OpenAI API.</li>
+  <li>Enabled features such as weather updates, email sending, system control (open apps, play music), and web scraping for dynamic responses.</li>
+  <li>Focused on modular development, extensibility, and user interaction via both CLI and GUI interfaces.</li>
+</ul>
 
   <p><strong>PHP Laravel Blog Application</strong></p>
   <ul>
@@ -260,7 +339,7 @@
 
 
 
-        <section class="card">
+  <section class="card">
   <h2>Certifications</h2>
   <ul>
     <li>Artificial Intelligence</li>
@@ -276,27 +355,14 @@
   </ul>
 </section>
 
-<section class="card">
-  <h2>Key Achievements</h2>
-  <ul>
-    <li>Published a research paper on <strong>Network-Based Intrusion Detection</strong> at NCASCD23. <a href="https://www.ijert.org/network-based-multiple-intrusion-detection-using-machine-learning" target="_blank">View Paper</a></li>
-    <li>Published <strong>Levitating Wind Power Technology for Vehicles</strong> on ResearchGate. <a href="https://www.researchgate.net/publication/390756365_Levitating_Wind_Power_Technology_for_Electrical_vehicles" target="_blank">View Paper</a></li>
-  </ul>
-</section>
-
-<section class="card">
-  <h2>Memberships & Leadership</h2>
-  <div class="tags animated-tags">
-    <div class="tag">Member - AICTSD (All India Council for Technical Skill Development)</div>
-    <div class="tag">Internshala Student Partner (2020)</div>
-  </div>
-</section>
 
 
-      </div>
 
-      <div class="right-column">
-        <section class="card">
+
+
+
+
+ <section class="card">
           <h2>Technical Skills</h2>
           <div class="tags">
             <div class="tag">C</div>
@@ -402,8 +468,30 @@
             <div class="tag">Journalism</div>
           </div>
         </section>
-      </div>
-    </div>
+
+<section class="card">
+  <h2>Key Achievements</h2>
+  <ul>
+    <li>Published a research paper on <strong>Network-Based Intrusion Detection</strong> at NCASCD23. <a href="https://www.ijert.org/network-based-multiple-intrusion-detection-using-machine-learning" target="_blank">View Paper</a></li>
+    <li>Published <strong>Levitating Wind Power Technology for Vehicles</strong> on ResearchGate. <a href="https://www.researchgate.net/publication/390756365_Levitating_Wind_Power_Technology_for_Electrical_vehicles" target="_blank">View Paper</a></li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Memberships & Leadership</h2>
+  <div class="tags animated-tags">
+    <div class="tag">Member - AICTSD (All India Council for Technical Skill Development)</div>
+    <div class="tag">Internshala Student Partner (2020)</div>
+  </div>
+
+
+
+
+
+
+</section>
+
+    
 
     <!-- Add Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
